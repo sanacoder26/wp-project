@@ -1,0 +1,101 @@
+/*
+Theme Name: FinConsult
+Theme URI: https://example.com/finconsult
+Author: AI Studio
+Author URI: https://example.com
+Description: A modern financial consulting WordPress theme with clean corporate UI.
+Version: 1.0
+Text Domain: finconsult
+*/
+
+:root {
+    /* CSS Variables for easy customization */
+    --primary-color: #2563eb; /* Blue 600 */
+    --primary-hover: #1d4ed8; /* Blue 700 */
+    --secondary-color: #0f172a; /* Slate 900 */
+    --text-main: #334155; /* Slate 700 */
+    --text-light: #64748b; /* Slate 500 */
+    --bg-light: #f8fafc; /* Slate 50 */
+    --bg-white: #ffffff;
+    
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 4rem;
+}
+
+/* Base Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-main);
+    background-color: var(--bg-white);
+    margin: 0;
+    padding: 0;
+}
+
+/* Reusable Classes */
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-hover);
+}
+
+.section-padding {
+    padding: var(--spacing-lg) 0;
+}
+
+.card {
+    background: var(--bg-white);
+    border-radius: 0.25rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom CSS for Hero Section */
+.hero-section {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 4rem 0;
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    .hero-section {
+        padding: 6rem 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero-section {
+        padding: 8rem 0;
+    }
+}
+
+/* Custom CSS for FAQ Accordion */
+.faq-item {
+    border: 1px solid #e2e8f0;
+    margin-bottom: 1rem;
+    border-radius: 0.25rem;
+}
+.faq-question {
+    padding: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.faq-answer {
+    padding: 0 1rem 1rem;
+    display: none;
+}
